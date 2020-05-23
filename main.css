@@ -1,0 +1,259 @@
+  #g_title p, #g_footer p, #g_description p {
+    margin: 0;
+  }
+  /*
+
+  	-- -- -- -- -- -- --
+  	Browser Fixes
+  	-- -- -- -- -- -- --
+  	
+  	This file uses CSS filtering methods to fix various
+  	layout bugs.
+
+  	Each of the following three imported files is a 
+  	separate, browser-specific CSS file that keeps all 
+  	hacks out of the main style sheet.
+  	
+  	Over time, as supporting these browsers no longer
+  	remains a priority, cleaning up the hacks is as
+  	easy as deleting the @import statement below, or
+  	simply no longer linking this file from the HTML.
+  	
+  */
+
+  /* 
+    fix ie6 "peekaboo bug" using the "holly hack". 
+    Note, this style only gets applied to ie6
+  */
+  * html .wrapper {
+    height: 0.1%;
+  }
+
+  /* 
+   * IE5 mac - overrides the IE/Win hack 
+   */
+
+  /*\*//*/
+
+  * html #threecolumn div {
+  	height: auto;
+  }
+
+  /**/
+
+
+  /* 
+   * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+   */
+
+  @media tty {
+   i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+  }/* */
+  /* Styling for editable elements. Eventually, this will be part of the style. */
+  .editable {
+    border: 1px dashed blue;
+  }
+  
+  #footer {
+    clear: both;
+  }
+  
+  /* Extra divs hidden by default. The custom CSS can override this though */
+  #extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+    display: none;
+  }
+  
+  a img,:link img,:visited img {border: none;}
+
+  body {
+    text-align: center;
+  }
+  #container {
+    width: 718px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  #main-content {
+    float: right;
+    width: 470px;
+  }
+  #sidebar {
+    float: right;
+    width: 230px;
+  }
+  #footer {
+    clear: both;
+  }
+  /** BEGIN CUSTOM SKIN **/
+    h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+    dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+    a img,:link img,:visited img {border: none;}
+    address {font-style: normal;}
+
+    /* Theme: Spring Branches */
+
+    html {background: #A0AA6D;}
+    body {background:#A0AA6D;font-family:'Georgia', 'Times New Roman','Times', serif;font-size:0.85em;margin:0px;}
+    a {color:#FF6600; text-decoration:none; border-bottom:1px dotted #FF6600;}
+    a:visited {color:#668866; text-decoration:none; border-bottom:1px dotted #668866;}
+    a:hover,a:active{color:#FF6600; text-decoration:none;border-bottom:1px dotted #FF6600;}
+    b, strong {font-weight:bold;}
+    blockquote {border-left:2px dotted #A0AA6D;margin:1em 3em;padding-left:1em;font-size:0.8em;color:#697335;}
+    blockquote p {line-height:1.45em;}
+    em {font-style:italic;}
+    h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:1.5em 0 0.5em 0;}
+    h1 {font-size:2.25em;color:#697335;margin:0;border-bottom:3px solid #A0AA6D;}
+    h2 {font-size:2em;color:#697335;border-bottom:3px dotted #A0AA6D;}
+    h3 {font-size:1.75em;color:#697335;border-bottom:2px solid #A0AA6D;}
+    h4 {font-size:1.5em;color:#697335;border-bottom:2px dotted #A0AA6D;}
+    h5 {font-size:1.25em;color:#697335;border-bottom:1px solid #A0AA6D;}
+    h6 {font-size:1em; color:#697335;border-bottom:1px dotted #A0AA6D;}
+    p, li {color:#697335;line-height:1.75em;margin:0 0 1em 0;}
+    p, td { text-align: justify; margin-right: 4mm; }
+    blockquote p, table p, dd p, li p, #header p {margin-bottom:0.5em;}
+    ul, ol {margin:1em 0; padding-left: 1.6em;}
+    li {margin:0.25em 0;}
+    ul li {list-style-type:disc;}
+    ol li {list-style-type:decimal;}
+    table {border:1px solid #A0AA6D;border-width:1px 1px 0 1px;}
+    table caption {
+  	display:block;
+  	white-space:nowrap;
+  	margin:0.5em 1em;
+  	color:#697335;
+  	font-size:0.85em;
+  }
+  
+  .light {
+    color: #A98335
+  }
+
+  .strong {
+    color: #FF6600
+  }
+
+    table td, table th {padding:0.5em 1em;vertical-align:top;}
+    table th {background-color:#A0AA6D;color:#E9ECCF;}
+    table td {border-bottom:1px solid #A0AA6D; color:#697335;}
+
+    dl {margin:1em;line-height:1.5em;list-style-type:disc;color:#697335;}
+    dt {margin-top:0.5em;color:#697335;}
+    dd {margin-left:2em;color:#697335;}
+
+    #adsense {text-align:center;}
+    #container {
+    	  padding: 0px; 	  
+  	  background-color:#E9ECCF;
+  	  margin:0px auto;
+    }
+    #footer {margin-top:0em;
+    	background: URL("img/skin_branch_bottom.jpg") no-repeat bottom left;
+  	background-color:#E9ECCF;
+    }
+
+    #footer hr {margin:0px;}
+    #footer p {margin:0px;}
+    #footer wrapper {margin:0px;}
+    
+    #g_footer {
+  	font-size:0.85em;
+  	font-family:Georgia, "Times New Roman", Times, serif;
+  	color:#697335;
+  	text-align:center;
+  	margin:0px;
+    }
+  	
+
+    #page-title { font-family:Georgia, "Times New Roman", Times, serif;
+      text-align:left;
+  	font-style:italic;
+  	padding-top:75px;
+  	border:none;
+    }
+    #g_description { font-family:Georgia, "Times New Roman", Times, serif;
+  	text-align:right;
+  	padding-left:25px;
+  	padding-right:25px;
+  	font-style:italic;
+  	color:#A0AA6D;
+    }
+    
+    #header {
+  	background: URL("img/top_pokus5.jpg") no-repeat top center;
+  	background-color: #D2D6B1;
+    }
+
+    #header .wrapper {
+      padding-left: 260px;
+    }	
+
+    #sidebar {font-size:0.85em;
+      background: URL("img/skin_branch_main_bg.jpg") repeat-x top left;
+      background-color:#E9ECCF;
+  	padding:5px;
+    }
+    #sidebar :first-child {margin-top:2mm;}
+    #sidebar-alternate {font-size:0.85em;
+      background: URL("img/skin_branch_main_bg.jpg") repeat-x top left;
+      background-color:#E9ECCF;
+  	padding:5px;
+    }
+    #sidebar-alternate :first-child {margin-top:0;}
+    #main-content { background: URL("img/skin_branch_main_bg.jpg") repeat-x top left;
+      background-color:#E9ECCF;
+  	padding:10px;
+    }
+    
+    #main-content h2:first-child {margin-top:0;}
+    
+    .menu div {
+      margin-left: 2mm;
+      margin-bottom: 1mm;
+    }	
+
+    hr {
+    height:1px;
+    margin:0px 20px;
+    background-color:#E9ECCF;
+    border:none;
+    border-bottom:2px dotted #A0AA6D;
+    }
+    
+    @media print {
+      html {background:#fff !important;}
+      #container {border-width:0px !important;padding:0 !important;}
+    }
+
+    /* Tweaks for Three-column layout
+    ----------------------------------------------- */
+    #threecolumn #main-content .wrapper {}
+    #threecolumn #sidebar {width:118px;}
+    #threecolumn #sidebar-alternative {width:118px;}
+    #threecolumn p.description {margin:0px;}
+    
+    /* Tweaks for Two-column Left layout
+    ----------------------------------------------- */
+    #twocolumn-left #main-content .wrapper {}
+    #twocolumn-left #sidebar {width:218px;}
+
+    /* Tweaks for Two-column Right layout
+    ----------------------------------------------- */
+    #twocolumn-right #main-content .wrapper {}
+    #twocolumn-right #sidebar {width:218px;}
+    
+    /* Tweaks for Two-column Liquid layout
+    ----------------------------------------------- */
+    #twocolumn-liquid-right #container {}
+    #twocolumn-liquid-right #main-content .wrapper {}
+    #twocolumn-liquid-left #container {}
+    #twocolumn-liquid-left #main-content .wrapper {}
+
+    /* Tweaks for One-column Liquid layout
+    ----------------------------------------------- */
+
+    /* Tweaks for One-column layout
+    ----------------------------------------------- */
+    #onecolumn #main-content .wrapper {}
+
+
+  /** END CUSTOM SKIN **/
